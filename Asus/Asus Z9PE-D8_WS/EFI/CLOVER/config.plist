@@ -4,6 +4,8 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>DropOEM_DSM</key>
@@ -76,12 +78,19 @@
 				<key>Signature</key>
 				<string>DMAR</string>
 			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>CpuPm</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Cpu0Ist</string>
+			</dict>
 		</array>
-		<key>RenameDevices</key>
-		<dict>
-			<key>_SB.PCI0.SBRG</key>
-			<string>LPCB</string>
-		</dict>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -106,7 +115,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>npci=0x2000 kext-dev-mode=1</string>
+		<string>-lilubetaall npci=0x2000</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -118,6 +127,13 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>AFGLowPowerState</key>
+			<false/>
+			<key>ResetHDA</key>
+			<true/>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
@@ -179,15 +195,47 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				weMISGPTidBIweoguZkBAAAPMEj/Bbm9awBIg8QIW13D
-				Zi4PH4QAAAAAAA==
+				weMISGPTidBIweoguZkBAAAPMEj/BXNIcwBIg8QIW13D
+				Dx9AAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6</string>
+				<string>10.14</string>
 				<key>Replace</key>
 				<data>
-				uwD/AABIY9OJ0EjB6iC5mQEAAA8wSP8Fub1rAEiDxAhb
-				XcOQkJCQkJCQkA==
+				uAD/AABIY9OJ0EjB6iC5mQEAAA8wSP8Fc0hzAEiDxAhb
+				XcOQkA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xcpm_pkg_scope_m﻿srs © Pike R. Alpha (kindly provided by @﻿PMHeart﻿)﻿</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				vgcAAAAx0uiR/P//
+				</data>
+				<key>MatchOS</key>
+				<string>10.14</string>
+				<key>Replace</key>
+				<data>
+				vgcAAAAx0pCQkJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_xcp﻿m_SMT_scope_msrs 2 © Pike﻿ ﻿R. Alpha (kindly provided by @PMHeart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				vgsAAAAx0uhm/P//
+				</data>
+				<key>MatchOS</key>
+				<string>10.14</string>
+				<key>Replace</key>
+				<data>
+				vgsAAAAx0pCQkJCQ
 				</data>
 			</dict>
 		</array>
@@ -215,22 +263,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB 10.13.4+ by PMHeart</string>
+				<string>USB 10.14+ by PMHeart</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g32IDw+DpwQAAA==
+				g/sPD4MJBQAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.13.6</string>
+				<string>10.14</string>
 				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<string>AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g32ID5CQkJCQkA==
+				g/sPkJCQkJCQ
 				</data>
 			</dict>
 		</array>
@@ -278,6 +326,8 @@
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
 		<key>PlatformFeature</key>
 		<string>0x04</string>
 		<key>ProductName</key>
@@ -285,7 +335,7 @@
 		<key>SerialNumber</key>
 		<string>F5KVG24CF9VM</string>
 		<key>Trust</key>
-		<true/>
+		<false/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
