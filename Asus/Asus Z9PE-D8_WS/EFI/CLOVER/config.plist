@@ -10,67 +10,13 @@
 		<dict>
 			<key>DropOEM_DSM</key>
 			<true/>
+			<key>Fixes</key>
+			<dict>
+				<key>DeleteUnused</key>
+				<false/>
+			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Comment</key>
-					<string>make disable \_SB.SCK0 _STA to XSTA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					FChfU1RBAHANQ1BVU0NLMABDVVUw
-					</data>
-					<key>Replace</key>
-					<data>
-					FChYU1RBAHANQ1BVU0NLMABDVVUw
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>make disable \_SB.SCK1 _STA to XSTA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					FChfU1RBAHANQ1BVU0NLMQBDVVUx
-					</data>
-					<key>Replace</key>
-					<data>
-					FChYU1RBAHANQ1BVU0NLMQBDVVUx
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>make disable \_SB.SCK2 _STA to XSTA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					FClfU1RBAHANQ1BVU0NLMgBDVVUy
-					</data>
-					<key>Replace</key>
-					<data>
-					FClYU1RBAHANQ1BVU0NLMgBDVVUy
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>make disable \_SB.SCK3 _STA to XSTA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					FClfU1RBAHANQ1BVU0NLMwBDVVUz
-					</data>
-					<key>Replace</key>
-					<data>
-					FClYU1RBAHANQ1BVU0NLMwBDVVUz
-					</data>
-				</dict>
-			</array>
 		</dict>
 		<key>DropTables</key>
 		<array>
@@ -91,55 +37,51 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<false/>
+		<key>RenameDevices</key>
+		<dict>
+			<key>_SB.PCI0.SAT0</key>
+			<string>SATA</string>
+			<key>_SB.PCI0.SATA.CHN0</key>
+			<string>PRT0</string>
+			<key>_SB.PCI0.SATA.CHN1</key>
+			<string>PRT1</string>
+		</dict>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
-				<key>APLF</key>
-				<false/>
-				<key>APSN</key>
-				<false/>
-				<key>CStates</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
 				<key>PluginType</key>
 				<false/>
 			</dict>
 		</dict>
 		<key>smartUPS</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-lilubetaall npci=0x2000</string>
-		<key>Debug</key>
-		<false/>
+		<string>npci=0x2000</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Timeout</key>
 		<integer>3</integer>
+		<key>XMPDetection</key>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<false/>
-			<key>ResetHDA</key>
-			<true/>
-		</dict>
+		<key>LANInjection</key>
+		<false/>
 		<key>USB</key>
 		<dict>
-			<key>FixOwnership</key>
-			<false/>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>GUI</key>
@@ -158,7 +100,7 @@
 			<false/>
 		</dict>
 		<key>Theme</key>
-		<string>metal</string>
+		<string>RoG</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -166,10 +108,8 @@
 		<dict>
 			<key>ATI</key>
 			<false/>
-			<key>Intel</key>
-			<false/>
 		</dict>
-		<key>RadeonDeInit</key>
+		<key>LoadVBios</key>
 		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -178,67 +118,12 @@
 		<true/>
 		<key>AppleRTC</key>
 		<false/>
-		<key>Debug</key>
-		<false/>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext\Contents\PlugIns\Intel82574L.kext</string>
 		</array>
 		<key>KernelPm</key>
 		<false/>
-		<key>KernelToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>P﻿erformances fix By PMHea﻿r﻿t﻿﻿﻿﻿</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				weMISGPTidBIweoguZkBAAAPMEj/BXNIcwBIg8QIW13D
-				Dx9AAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14</string>
-				<key>Replace</key>
-				<data>
-				uAD/AABIY9OJ0EjB6iC5mQEAAA8wSP8Fc0hzAEiDxAhb
-				XcOQkA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>xcpm_pkg_scope_m﻿srs © Pike R. Alpha (kindly provided by @﻿PMHeart﻿)﻿</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				vgcAAAAx0uiR/P//
-				</data>
-				<key>MatchOS</key>
-				<string>10.14</string>
-				<key>Replace</key>
-				<data>
-				vgcAAAAx0pCQkJCQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_xcp﻿m_SMT_scope_msrs 2 © Pike﻿ ﻿R. Alpha (kindly provided by @PMHeart)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				vgsAAAAx0uhm/P//
-				</data>
-				<key>MatchOS</key>
-				<string>10.14</string>
-				<key>Replace</key>
-				<data>
-				vgsAAAAx0pCQkJCQ
-				</data>
-			</dict>
-		</array>
 		<key>KernelXCPM</key>
 		<false/>
 		<key>KextsToPatch</key>
@@ -263,12 +148,12 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB 10.14+ by PMHeart</string>
+				<string>USB 10.14+ by Pavo</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g/sPD4MJBQAA
+				g/sPD4MDBQAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
@@ -278,7 +163,7 @@
 				<string>AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g/sPkJCQkJCQ
+				Zg8fhAAAAAAA
 				</data>
 			</dict>
 		</array>
@@ -295,17 +180,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>08/08/2017</string>
+		<string>04/11/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MP61.88Z.0120.B00.1708080652</string>
+		<string>MP61.88Z.0124.B00.1804111223</string>
 		<key>Board-ID</key>
 		<string>Mac-F60DEB81FF30ACF6</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>F5K739802GUF651UE</string>
+		<string>F5K434802GUFF4JAD</string>
 		<key>BoardType</key>
 		<integer>11</integer>
 		<key>BoardVersion</key>
@@ -333,9 +218,7 @@
 		<key>ProductName</key>
 		<string>MacPro6,1</string>
 		<key>SerialNumber</key>
-		<string>F5KVG24CF9VM</string>
-		<key>Trust</key>
-		<false/>
+		<string>F5KN82HFF9VM</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
