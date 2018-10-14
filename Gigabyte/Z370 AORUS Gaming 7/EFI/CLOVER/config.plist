@@ -4,6 +4,13 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>DropTables</key>
+		<array>
+			<dict>
+				<key>Signature</key>
+				<string>MATS</string>
+			</dict>
+		</array>
 		<key>SSDT</key>
 		<dict>
 			<key>PluginType</key>
@@ -24,10 +31,8 @@
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
-			<true/>
+			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x3E9B0006</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
