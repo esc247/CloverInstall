@@ -67,7 +67,7 @@
 			<key>Generate</key>
 			<dict>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
