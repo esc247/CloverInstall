@@ -30,8 +30,10 @@
 	<dict>
 		<key>Inject</key>
 		<dict>
-			<key>Intel</key>
+			<key>ATI</key>
 			<false/>
+			<key>Intel</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
