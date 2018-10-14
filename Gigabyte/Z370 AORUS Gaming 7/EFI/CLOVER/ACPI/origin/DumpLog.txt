@@ -1,0 +1,144 @@
+3:441  1:183  Found BIOS RSDP at FD480
+3:441  0:000  Printing ACPI tables from RSDP FD480 ...
+3:441  0:000   FD480: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+3:441  0:000    (Xsdt: 3C88C098, Rsdt: 3C88C028)
+3:441  0:000    3C88C098: 'XSDT', 'A M I', Rev: 1, Len: 172
+3:441  0:000    3C88C028: 'RSDT', 'A M I', Rev: 1, Len: 104
+3:441  0:000    Tables in Xsdt: 17
+3:441  0:000    0. 3C8994F0: 'FACP', 'A M I', Rev: 5, Len: 268
+3:441  0:000        (Dsdt: 3C88C1E0, Facs: 3D595F80, XDsdt: 3C88C1E0, XFacs: 0)
+3:441  0:000        3C88C1E0: 'DSDT', 'A M I', Rev: 2, Len: 54031
+3:443  0:001        3D595F80: 'FACS', Ver: 2, Len: 64
+3:443  0:000    1. 3C899600: 'APIC', 'A M I', Rev: 3, Len: 660
+3:443  0:000    2. 3C899898: 'FPDT', 'A M I', Rev: 1, Len: 68
+3:443  0:000    3. 3C8998E0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+3:443  0:000    4. 3C899920: 'SRAT', 'AMI SRAT', Rev: 1, Len: 1328
+3:443  0:000    5. 3C899E50: 'SLIT', 'AMI SLIT', Rev: 1, Len: 48
+3:443  0:000    6. 3C899E80: 'HPET', 'A M I', Rev: 1, Len: 56
+3:443  0:000    7. 3C899EB8: 'UEFI', 'RstScuO', Rev: 1, Len: 298
+3:443  0:000    8. 3C96B280: 'DMAR', 'OEMDMAR', Rev: 1, Len: 224
+3:443  0:000    9. 3C89A040: 'PRAD', 'PRADTID', Rev: 2, Len: 190
+3:443  0:000    10. 3C89A100: 'SSDT', 'CpuPm', Rev: 2, Len: 855216
+3:443  0:000    11. 3C96ADB0: 'BGRT', 'A M I', Rev: 0, Len: 56
+3:443  0:000    12. 3C96ADE8: 'UEFI', 'RstScuV', Rev: 1, Len: 92
+3:443  0:000    13. 3C96AE48: 'EINJ', 'AMI EINJ', Rev: 1, Len: 304
+3:443  0:000    14. 3C96AF78: 'ERST', 'AMI ERST', Rev: 1, Len: 560
+3:443  0:000    15. 3C96B1A8: 'HEST', 'AMI HEST', Rev: 1, Len: 168
+3:443  0:000    16. 3C96B250: 'BERT', 'AMI BERT', Rev: 1, Len: 48
+3:443  0:000    Tables in Rsdt: 17
+3:443  0:000    0. 3C88C158: 'FACP', 'A M I', Rev: 2, Len: 132
+3:443  0:000        (Dsdt: 3C88C1E0, Facs: 3D595F40)
+3:443  0:000        3C88C1E0: 'DSDT', 'A M I', Rev: 2, Len: 54031
+3:445  0:001        3D595F40: 'FACS', Ver: 0, Len: 64
+3:445  0:000    1. 3C899600: 'APIC', 'A M I', Rev: 3, Len: 660
+3:445  0:000    2. 3C899898: 'FPDT', 'A M I', Rev: 1, Len: 68
+3:445  0:000    3. 3C8998E0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+3:445  0:000    4. 3C899920: 'SRAT', 'AMI SRAT', Rev: 1, Len: 1328
+3:445  0:000    5. 3C899E50: 'SLIT', 'AMI SLIT', Rev: 1, Len: 48
+3:445  0:000    6. 3C899E80: 'HPET', 'A M I', Rev: 1, Len: 56
+3:445  0:000    7. 3C899EB8: 'UEFI', 'RstScuO', Rev: 1, Len: 298
+3:445  0:000    8. 3C96B280: 'DMAR', 'OEMDMAR', Rev: 1, Len: 224
+3:445  0:000    9. 3C89A040: 'PRAD', 'PRADTID', Rev: 2, Len: 190
+3:445  0:000    10. 3C89A100: 'SSDT', 'CpuPm', Rev: 2, Len: 855216
+3:445  0:000    11. 3C96ADB0: 'BGRT', 'A M I', Rev: 0, Len: 56
+3:445  0:000    12. 3C96ADE8: 'UEFI', 'RstScuV', Rev: 1, Len: 92
+3:445  0:000    13. 3C96AE48: 'EINJ', 'AMI EINJ', Rev: 1, Len: 304
+3:445  0:000    14. 3C96AF78: 'ERST', 'AMI ERST', Rev: 1, Len: 560
+3:445  0:000    15. 3C96B1A8: 'HEST', 'AMI HEST', Rev: 1, Len: 168
+3:445  0:000    16. 3C96B250: 'BERT', 'AMI BERT', Rev: 1, Len: 48
+3:445  0:000  Found UEFI Acpi 2.0 RSDP at 3C88C000
+3:445  0:000  Saving ACPI tables from RSDP 3C88C000 to EFI\CLOVER\ACPI\origin ...
+3:445  0:000   3C88C000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+3:457  0:012    (Xsdt: 3C88C098, Rsdt: 3C88C028)
+3:457  0:000    3C88C098: 'XSDT', 'A M I', Rev: 1, Len: 172 -> XSDT.aml
+3:465  0:008    3C88C028: 'RSDT', 'A M I', Rev: 1, Len: 104 -> RSDT.aml
+3:473  0:008    Tables in Xsdt: 17
+3:473  0:000    0. 3C8994F0: 'FACP', 'A M I', Rev: 5, Len: 268 -> FACP.aml
+3:485  0:011        (Dsdt: 3C88C1E0, Facs: 3D595F80, XDsdt: 3C88C1E0, XFacs: 0)
+3:485  0:000        3C88C1E0: 'DSDT', 'A M I', Rev: 2, Len: 54031 -> DSDT.aml
+3:503  0:018        3D595F80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+3:511  0:008    1. 3C899600: 'APIC', 'A M I', Rev: 3, Len: 660 -> APIC.aml
+3:519  0:008    2. 3C899898: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+3:532  0:012    3. 3C8998E0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60 -> MCFG.aml
+3:540  0:008    4. 3C899920: 'SRAT', 'AMI SRAT', Rev: 1, Len: 1328 -> SRAT.aml
+3:548  0:008    5. 3C899E50: 'SLIT', 'AMI SLIT', Rev: 1, Len: 48 -> SLIT.aml
+3:560  0:012    6. 3C899E80: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+3:568  0:008    7. 3C899EB8: 'UEFI', 'RstScuO', Rev: 1, Len: 298 -> UEFI.aml
+3:576  0:007    8. 3C96B280: 'DMAR', 'OEMDMAR', Rev: 1, Len: 224 -> DMAR.aml
+3:584  0:008    9. 3C89A040: 'PRAD', 'PRADTID', Rev: 2, Len: 190 -> PRAD.aml
+3:593  0:008    10. 3C89A100: 'SSDT', 'CpuPm', Rev: 2, Len: 855216 -> SSDT-0-CpuPm.aml
+3:691  0:098    11. 3C96ADB0: 'BGRT', 'A M I', Rev: 0, Len: 56 -> BGRT.aml
+3:699  0:008    12. 3C96ADE8: 'UEFI', 'RstScuV', Rev: 1, Len: 92 -> UEFI.aml
+3:713  0:014    13. 3C96AE48: 'EINJ', 'AMI EINJ', Rev: 1, Len: 304 -> EINJ.aml
+3:725  0:011    14. 3C96AF78: 'ERST', 'AMI ERST', Rev: 1, Len: 560 -> ERST.aml
+3:733  0:007    15. 3C96B1A8: 'HEST', 'AMI HEST', Rev: 1, Len: 168 -> HEST.aml
+3:741  0:007    16. 3C96B250: 'BERT', 'AMI BERT', Rev: 1, Len: 48 -> BERT.aml
+3:749  0:008    Tables in Rsdt: 17
+3:749  0:000    0. 3C88C158: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+3:757  0:008        (Dsdt: 3C88C1E0, Facs: 3D595F40)
+3:757  0:000        3C88C1E0: 'DSDT', 'A M I', Rev: 2, Len: 54031
+3:759  0:002        3D595F40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+3:773  0:013    1. 3C899600: 'APIC', 'A M I', Rev: 3, Len: 660
+3:773  0:000    2. 3C899898: 'FPDT', 'A M I', Rev: 1, Len: 68
+3:773  0:000    3. 3C8998E0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+3:773  0:000    4. 3C899920: 'SRAT', 'AMI SRAT', Rev: 1, Len: 1328
+3:773  0:000    5. 3C899E50: 'SLIT', 'AMI SLIT', Rev: 1, Len: 48
+3:773  0:000    6. 3C899E80: 'HPET', 'A M I', Rev: 1, Len: 56
+3:773  0:000    7. 3C899EB8: 'UEFI', 'RstScuO', Rev: 1, Len: 298
+3:773  0:000    8. 3C96B280: 'DMAR', 'OEMDMAR', Rev: 1, Len: 224
+3:773  0:000    9. 3C89A040: 'PRAD', 'PRADTID', Rev: 2, Len: 190
+3:773  0:000    10. 3C89A100: 'SSDT', 'CpuPm', Rev: 2, Len: 855216
+3:773  0:000    11. 3C96ADB0: 'BGRT', 'A M I', Rev: 0, Len: 56
+3:773  0:000    12. 3C96ADE8: 'UEFI', 'RstScuV', Rev: 1, Len: 92
+3:773  0:000    13. 3C96AE48: 'EINJ', 'AMI EINJ', Rev: 1, Len: 304
+3:773  0:000    14. 3C96AF78: 'ERST', 'AMI ERST', Rev: 1, Len: 560
+3:773  0:000    15. 3C96B1A8: 'HEST', 'AMI HEST', Rev: 1, Len: 168
+3:773  0:000    16. 3C96B250: 'BERT', 'AMI BERT', Rev: 1, Len: 48
+3:773  0:000  Found UEFI Acpi 1.0 RSDP at 3C88C000
+3:773  0:000  Printing ACPI tables from RSDP 3C88C000 ...
+3:773  0:000   3C88C000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+3:773  0:000    (Xsdt: 3C88C098, Rsdt: 3C88C028)
+3:773  0:000    3C88C098: 'XSDT', 'A M I', Rev: 1, Len: 172
+3:773  0:000    3C88C028: 'RSDT', 'A M I', Rev: 1, Len: 104
+3:773  0:000    Tables in Xsdt: 17
+3:773  0:000    0. 3C8994F0: 'FACP', 'A M I', Rev: 5, Len: 268
+3:773  0:000        (Dsdt: 3C88C1E0, Facs: 3D595F80, XDsdt: 3C88C1E0, XFacs: 0)
+3:773  0:000        3C88C1E0: 'DSDT', 'A M I', Rev: 2, Len: 54031
+3:775  0:001        3D595F80: 'FACS', Ver: 2, Len: 64
+3:775  0:000    1. 3C899600: 'APIC', 'A M I', Rev: 3, Len: 660
+3:775  0:000    2. 3C899898: 'FPDT', 'A M I', Rev: 1, Len: 68
+3:775  0:000    3. 3C8998E0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+3:775  0:000    4. 3C899920: 'SRAT', 'AMI SRAT', Rev: 1, Len: 1328
+3:775  0:000    5. 3C899E50: 'SLIT', 'AMI SLIT', Rev: 1, Len: 48
+3:775  0:000    6. 3C899E80: 'HPET', 'A M I', Rev: 1, Len: 56
+3:775  0:000    7. 3C899EB8: 'UEFI', 'RstScuO', Rev: 1, Len: 298
+3:775  0:000    8. 3C96B280: 'DMAR', 'OEMDMAR', Rev: 1, Len: 224
+3:775  0:000    9. 3C89A040: 'PRAD', 'PRADTID', Rev: 2, Len: 190
+3:775  0:000    10. 3C89A100: 'SSDT', 'CpuPm', Rev: 2, Len: 855216
+3:775  0:000    11. 3C96ADB0: 'BGRT', 'A M I', Rev: 0, Len: 56
+3:775  0:000    12. 3C96ADE8: 'UEFI', 'RstScuV', Rev: 1, Len: 92
+3:775  0:000    13. 3C96AE48: 'EINJ', 'AMI EINJ', Rev: 1, Len: 304
+3:775  0:000    14. 3C96AF78: 'ERST', 'AMI ERST', Rev: 1, Len: 560
+3:775  0:000    15. 3C96B1A8: 'HEST', 'AMI HEST', Rev: 1, Len: 168
+3:775  0:000    16. 3C96B250: 'BERT', 'AMI BERT', Rev: 1, Len: 48
+3:775  0:000    Tables in Rsdt: 17
+3:775  0:000    0. 3C88C158: 'FACP', 'A M I', Rev: 2, Len: 132
+3:775  0:000        (Dsdt: 3C88C1E0, Facs: 3D595F40)
+3:775  0:000        3C88C1E0: 'DSDT', 'A M I', Rev: 2, Len: 54031
+3:777  0:001        3D595F40: 'FACS', Ver: 0, Len: 64
+3:777  0:000    1. 3C899600: 'APIC', 'A M I', Rev: 3, Len: 660
+3:777  0:000    2. 3C899898: 'FPDT', 'A M I', Rev: 1, Len: 68
+3:777  0:000    3. 3C8998E0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+3:777  0:000    4. 3C899920: 'SRAT', 'AMI SRAT', Rev: 1, Len: 1328
+3:777  0:000    5. 3C899E50: 'SLIT', 'AMI SLIT', Rev: 1, Len: 48
+3:777  0:000    6. 3C899E80: 'HPET', 'A M I', Rev: 1, Len: 56
+3:777  0:000    7. 3C899EB8: 'UEFI', 'RstScuO', Rev: 1, Len: 298
+3:777  0:000    8. 3C96B280: 'DMAR', 'OEMDMAR', Rev: 1, Len: 224
+3:777  0:000    9. 3C89A040: 'PRAD', 'PRADTID', Rev: 2, Len: 190
+3:777  0:000    10. 3C89A100: 'SSDT', 'CpuPm', Rev: 2, Len: 855216
+3:777  0:000    11. 3C96ADB0: 'BGRT', 'A M I', Rev: 0, Len: 56
+3:777  0:000    12. 3C96ADE8: 'UEFI', 'RstScuV', Rev: 1, Len: 92
+3:777  0:000    13. 3C96AE48: 'EINJ', 'AMI EINJ', Rev: 1, Len: 304
+3:777  0:000    14. 3C96AF78: 'ERST', 'AMI ERST', Rev: 1, Len: 560
+3:777  0:000    15. 3C96B1A8: 'HEST', 'AMI HEST', Rev: 1, Len: 168
+3:777  0:000    16. 3C96B250: 'BERT', 'AMI BERT', Rev: 1, Len: 48
