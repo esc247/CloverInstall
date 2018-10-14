@@ -70,9 +70,15 @@
 		<dict>
 			<key>Generate</key>
 			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
 				<key>PluginType</key>
 				<false/>
 			</dict>
+			<key>PluginType</key>
+			<string>1</string>
 		</dict>
 	</dict>
 	<key>Boot</key>
