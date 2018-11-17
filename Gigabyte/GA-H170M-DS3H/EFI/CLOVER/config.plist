@@ -6,12 +6,10 @@
 	<dict>
 		<key>DSDT</key>
 		<dict>
-			<key>Debug</key>
-			<false/>
-			<key>DropOEM_DSM</key>
-			<false/>
 			<key>Fixes</key>
 			<dict>
+				<key>AddMCHC</key>
+				<true/>
 				<key>FixHPET</key>
 				<true/>
 			</dict>
@@ -25,13 +23,19 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1BUUw==
-					</data>
+					<data>X1BUUw==</data>
 					<key>Replace</key>
-					<data>
-					WlBUUw==
-					</data>
+					<data>WlBUUw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X09TSQ==</data>
+					<key>Replace</key>
+					<data>WE9TSQ==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -48,8 +52,12 @@
 		<true/>
 		<key>RenameDevices</key>
 		<dict>
+			<key>PPMC</key>
+			<string>PMCR</string>
 			<key>SAT0</key>
 			<string>SATA</string>
+			<key>_SB.PCI0.RP20.PXSX</key>
+			<string>ARPT</string>
 		</dict>
 		<key>SSDT</key>
 		<dict>
@@ -69,7 +77,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=0 -lilubetaall</string>
+		<string>darkwake=0 nvme=-1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverDoRecovery</key>
@@ -92,86 +100,36 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>FakeID</key>
-		<dict>
-			<key>ATI</key>
-			<string>0x0</string>
-			<key>IMEI</key>
-			<string>0x0</string>
-			<key>IntelGFX</key>
-			<string>0x0</string>
-			<key>LAN</key>
-			<string>0x0</string>
-			<key>NVidia</key>
-			<string>0x0</string>
-			<key>SATA</key>
-			<string>0x0</string>
-			<key>WIFI</key>
-			<string>0x0</string>
-			<key>XHCI</key>
-			<string>0x0</string>
-		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>MaximumBootBeepVolume</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>PinConfigurations</key>
-				<data>
-				AA==
-				</data>
-				<key>alc-layout-id</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AA==</data>
+				<key>layout-id</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AQASGQ==
-				</data>
+				<data>AQASGQ==</data>
 				<key>AAPL00,DualLink</key>
-				<data>
-				AQ==
-				</data>
+				<data>AQ==</data>
 				<key>class-code</key>
-				<data>
-				AAADAA==
-				</data>
+				<data>AAADAA==</data>
 				<key>device-id</key>
-				<data>
-				EhkAAA==
-				</data>
+				<data>EhkAAA==</data>
 				<key>model</key>
-				<data>
-				SW50ZWwgSEQgR3JhcGhpYwAABzID
-				</data>
+				<data>SW50ZWwgSEQgR3JhcGhpYwAAAAAA</data>
 				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
+				<data>axAAAA==</data>
 				<key>vendor-id</key>
-				<data>
-				hoAAAA==
-				</data>
+				<data>hoAAAA==</data>
 			</dict>
 		</dict>
-		<key>USB</key>
-		<dict>
-			<key>FixOwnership</key>
-			<false/>
-			<key>Inject</key>
-			<false/>
-		</dict>
 	</dict>
-	<key>DisableDrivers</key>
-	<array>
-		<string>VBoxHfs</string>
-	</array>
 	<key>GUI</key>
 	<dict>
 		<key>Custom</key>
@@ -191,6 +149,8 @@
 					<string>Antergos</string>
 					<key>Type</key>
 					<string>Linux</string>
+					<key>Volume</key>
+					<string>308B63B8-1849-4295-8C96-33CBF0F5C4DC</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -203,6 +163,8 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
+		<key>KbdPrevLang</key>
+		<true/>
 		<key>Language</key>
 		<string>en:0</string>
 		<key>Mouse</key>
@@ -221,66 +183,12 @@
 			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
-			<false/>
+			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>3840x2160</string>
 		<key>TextOnly</key>
 		<false/>
 		<key>Theme</key>
-		<string>Beauty</string>
-	</dict>
-	<key>Graphics</key>
-	<dict>
-		<key>Inject</key>
-		<dict>
-			<key>ATI</key>
-			<false/>
-			<key>Intel</key>
-			<false/>
-			<key>NVidia</key>
-			<false/>
-		</dict>
-		<key>RadeonDeInit</key>
-		<false/>
-	</dict>
-	<key>KernelAndKextPatches</key>
-	<dict>
-		<key>#FakeCPUID</key>
-		<string>0x010676</string>
-		<key>AppleIntelCPUPM</key>
-		<false/>
-		<key>AppleRTC</key>
-		<false/>
-		<key>KernelCpu</key>
-		<false/>
-		<key>KernelLapic</key>
-		<false/>
-		<key>KernelPm</key>
-		<false/>
-		<key>KernelXCPM</key>
-		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
-			</dict>
-		</array>
+		<string>Clovy</string>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -288,48 +196,24 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>05/02/2018</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>IM171.88Z.0154.B00.1805021829</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>iMac-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
+		<key>Board-ID</key>
+		<string>Mac-DB15BD556843C820</string>
 		<key>Family</key>
 		<string>iMac17,1</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE136</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<false/>
-		<key>PlatformFeature</key>
-		<string>0x00</string>
 		<key>ProductName</key>
 		<string>iMac17,1</string>
-		<key>Version</key>
-		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>

@@ -1,0 +1,137 @@
+20:271  14:543  Found BIOS RSDP at F05B0
+20:271  0:000  Printing ACPI tables from RSDP F05B0 ...
+20:271  0:000   F05B0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+20:271  0:000    (Rsdt: AA532028)
+20:271  0:000    AA532028: 'RSDT', 'A M I', Rev: 1, Len: 116
+20:271  0:000    Tables in Rsdt: 20
+20:271  0:000    0. AA532178: 'FACP', 'A M I', Rev: 2, Len: 132
+20:271  0:000        (Dsdt: AA532200, Facs: AA8F2C00)
+20:271  0:000        AA532200: 'DSDT', 'A M I', Rev: 2, Len: 164836
+20:274  0:002        AA8F2C00: 'FACS', Ver: 0, Len: 64
+20:274  0:000    1. AA55A700: 'APIC', 'A M I', Rev: 3, Len: 132
+20:274  0:000    2. AA55A788: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:274  0:000    3. AA55A7D0: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:274  0:000    4. AA55A810: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:274  0:000    5. AA55A8B0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:274  0:000    6. AA55DA08: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:274  0:000    7. AA55FF50: 'HPET', 'SKL', Rev: 1, Len: 56
+20:274  0:000    8. AA55FF88: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:274  0:000    9. AA560DC8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:274  0:000    10. AA5638A0: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:274  0:000    11. AA5638E8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:274  0:000    12. AA5647C8: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:274  0:000    13. AA564860: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:274  0:000    14. AA564888: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:274  0:000    15. AA564B28: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:274  0:000    16. AA567B30: 'DBGP', '', Rev: 1, Len: 52
+20:274  0:000    17. AA567B68: 'DBG2', '', Rev: 0, Len: 84
+20:274  0:000    18. AA567BC0: 'VFCT', 'A M I', Rev: 1, Len: 59524
+20:274  0:000    19. AA576448: 'DMAR', 'SKL', Rev: 1, Len: 168
+20:274  0:000  Found UEFI Acpi 2.0 RSDP at AA532000
+20:274  0:000  Saving ACPI tables from RSDP AA532000 to EFI\CLOVER\ACPI\origin ...
+20:274  0:000   AA532000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+20:274  0:000    (Xsdt: AA5320A0, Rsdt: AA532028)
+20:274  0:000    AA5320A0: 'XSDT', 'A M I', Rev: 1, Len: 196
+20:274  0:000    AA532028: 'RSDT', 'A M I', Rev: 1, Len: 116
+20:274  0:000    Tables in Xsdt: 20
+20:274  0:000    0. AA55A5E8: 'FACP', 'A M I', Rev: 6, Len: 276
+20:274  0:000        (Dsdt: AA532200, Facs: AA8F2C40, XDsdt: AA532200, XFacs: 0)
+20:274  0:000        AA532200: 'DSDT', 'A M I', Rev: 2, Len: 164836
+20:276  0:002        AA8F2C40: 'FACS', Ver: 2, Len: 64
+20:276  0:000    1. AA55A700: 'APIC', 'A M I', Rev: 3, Len: 132
+20:276  0:000    2. AA55A788: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:276  0:000    3. AA55A7D0: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:276  0:000    4. AA55A810: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:276  0:000    5. AA55A8B0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:276  0:000    6. AA55DA08: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:276  0:000    7. AA55FF50: 'HPET', 'SKL', Rev: 1, Len: 56
+20:276  0:000    8. AA55FF88: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:276  0:000    9. AA560DC8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:276  0:000    10. AA5638A0: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:276  0:000    11. AA5638E8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:276  0:000    12. AA5647C8: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:276  0:000    13. AA564860: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:276  0:000    14. AA564888: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:276  0:000    15. AA564B28: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:276  0:000    16. AA567B30: 'DBGP', '', Rev: 1, Len: 52
+20:276  0:000    17. AA567B68: 'DBG2', '', Rev: 0, Len: 84
+20:276  0:000    18. AA567BC0: 'VFCT', 'A M I', Rev: 1, Len: 59524
+20:276  0:000    19. AA576448: 'DMAR', 'SKL', Rev: 1, Len: 168
+20:276  0:000    Tables in Rsdt: 20
+20:276  0:000    0. AA532178: 'FACP', 'A M I', Rev: 2, Len: 132
+20:276  0:000        (Dsdt: AA532200, Facs: AA8F2C00)
+20:276  0:000        AA532200: 'DSDT', 'A M I', Rev: 2, Len: 164836
+20:278  0:002        AA8F2C00: 'FACS', Ver: 0, Len: 64
+20:278  0:000    1. AA55A700: 'APIC', 'A M I', Rev: 3, Len: 132
+20:278  0:000    2. AA55A788: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:278  0:000    3. AA55A7D0: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:278  0:000    4. AA55A810: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:278  0:000    5. AA55A8B0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:278  0:000    6. AA55DA08: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:278  0:000    7. AA55FF50: 'HPET', 'SKL', Rev: 1, Len: 56
+20:278  0:000    8. AA55FF88: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:278  0:000    9. AA560DC8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:278  0:000    10. AA5638A0: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:278  0:000    11. AA5638E8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:278  0:000    12. AA5647C8: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:278  0:000    13. AA564860: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:278  0:000    14. AA564888: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:278  0:000    15. AA564B28: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:278  0:000    16. AA567B30: 'DBGP', '', Rev: 1, Len: 52
+20:278  0:000    17. AA567B68: 'DBG2', '', Rev: 0, Len: 84
+20:278  0:000    18. AA567BC0: 'VFCT', 'A M I', Rev: 1, Len: 59524
+20:278  0:000    19. AA576448: 'DMAR', 'SKL', Rev: 1, Len: 168
+20:278  0:000  Found UEFI Acpi 1.0 RSDP at AA532000
+20:278  0:000  Printing ACPI tables from RSDP AA532000 ...
+20:278  0:000   AA532000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+20:278  0:000    (Xsdt: AA5320A0, Rsdt: AA532028)
+20:278  0:000    AA5320A0: 'XSDT', 'A M I', Rev: 1, Len: 196
+20:278  0:000    AA532028: 'RSDT', 'A M I', Rev: 1, Len: 116
+20:278  0:000    Tables in Xsdt: 20
+20:278  0:000    0. AA55A5E8: 'FACP', 'A M I', Rev: 6, Len: 276
+20:278  0:000        (Dsdt: AA532200, Facs: AA8F2C40, XDsdt: AA532200, XFacs: 0)
+20:278  0:000        AA532200: 'DSDT', 'A M I', Rev: 2, Len: 164836
+20:281  0:002        AA8F2C40: 'FACS', Ver: 2, Len: 64
+20:281  0:000    1. AA55A700: 'APIC', 'A M I', Rev: 3, Len: 132
+20:281  0:000    2. AA55A788: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:281  0:000    3. AA55A7D0: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:281  0:000    4. AA55A810: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:281  0:000    5. AA55A8B0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:281  0:000    6. AA55DA08: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:281  0:000    7. AA55FF50: 'HPET', 'SKL', Rev: 1, Len: 56
+20:281  0:000    8. AA55FF88: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:281  0:000    9. AA560DC8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:281  0:000    10. AA5638A0: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:281  0:000    11. AA5638E8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:281  0:000    12. AA5647C8: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:281  0:000    13. AA564860: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:281  0:000    14. AA564888: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:281  0:000    15. AA564B28: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:281  0:000    16. AA567B30: 'DBGP', '', Rev: 1, Len: 52
+20:281  0:000    17. AA567B68: 'DBG2', '', Rev: 0, Len: 84
+20:281  0:000    18. AA567BC0: 'VFCT', 'A M I', Rev: 1, Len: 59524
+20:281  0:000    19. AA576448: 'DMAR', 'SKL', Rev: 1, Len: 168
+20:281  0:000    Tables in Rsdt: 20
+20:281  0:000    0. AA532178: 'FACP', 'A M I', Rev: 2, Len: 132
+20:281  0:000        (Dsdt: AA532200, Facs: AA8F2C00)
+20:281  0:000        AA532200: 'DSDT', 'A M I', Rev: 2, Len: 164836
+20:283  0:002        AA8F2C00: 'FACS', Ver: 0, Len: 64
+20:283  0:000    1. AA55A700: 'APIC', 'A M I', Rev: 3, Len: 132
+20:283  0:000    2. AA55A788: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:283  0:000    3. AA55A7D0: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:283  0:000    4. AA55A810: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:283  0:000    5. AA55A8B0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:283  0:000    6. AA55DA08: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:283  0:000    7. AA55FF50: 'HPET', 'SKL', Rev: 1, Len: 56
+20:283  0:000    8. AA55FF88: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:283  0:000    9. AA560DC8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:283  0:000    10. AA5638A0: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:283  0:000    11. AA5638E8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:283  0:000    12. AA5647C8: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:283  0:000    13. AA564860: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:283  0:000    14. AA564888: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:283  0:000    15. AA564B28: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:283  0:000    16. AA567B30: 'DBGP', '', Rev: 1, Len: 52
+20:283  0:000    17. AA567B68: 'DBG2', '', Rev: 0, Len: 84
+20:283  0:000    18. AA567BC0: 'VFCT', 'A M I', Rev: 1, Len: 59524
+20:283  0:000    19. AA576448: 'DMAR', 'SKL', Rev: 1, Len: 168
