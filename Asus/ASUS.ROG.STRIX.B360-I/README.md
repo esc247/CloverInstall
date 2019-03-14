@@ -7,4 +7,7 @@ Gigabyte AORUS Radeon RX 580 8GB
 What works:
 
 + Everything
-- Built-in WiFi
+
+What does not:
+
++ Built-in WiFi
