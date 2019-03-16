@@ -11,7 +11,6 @@
 	* [USBInjectAll](#usbinjectall)
 	* [Various Lilu kexts](#various-lilu-kexts)
 		* [AppleALC](#applealc)
-		* [NoVPAJpeg](#novpajpeg)
 		* [WhateverGreen](#whatevergreen)
 
 <!-- vim-markdown-toc -->
@@ -80,15 +79,6 @@ An open source kernel extension enabling native macOS HD audio for not
 officially supported codecs without any filesystem modifications
 
 * [https://github.com/acidanthera/AppleALC](https://github.com/acidanthera/AppleALC)
-
-
-#### NoVPAJpeg
-
-NoVPAJpeg Lilu plugin: Disables the hardware JPEG decoding feature of the
-AppleVPA framework that breaks Preview and Quicklook on some systems.
-
-[https://github.com/vulgo/NoVPAJpeg/releases](https://github.com/vulgo/NoVPAJpeg/releases)
-
 
 #### WhateverGreen
 
