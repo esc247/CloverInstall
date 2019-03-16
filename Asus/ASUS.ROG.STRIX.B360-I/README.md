@@ -27,7 +27,7 @@
 ## what doesn't work
 
 * onboard Wi-Fi
-* USB 3.0
+* USB 3.0 for USB drives
 
 ## bios
 
