@@ -5,6 +5,7 @@
 * [updates](#updates)
 	* [Saturday March 16, 2019](#saturday-march-16-2019)
 * [what doesn't work](#what-doesnt-work)
+* [bios](#bios)
 * [drivers64UEFI](#drivers64uefi)
 	* [OsxAptioFix2Drv-free2000.efi](#osxaptiofix2drv-free2000efi)
 * [kexts](#kexts)
@@ -27,6 +28,10 @@
 
 * onboard Wi-Fi
 * USB 3.0
+
+## bios
+
+Settings files for the bios to load from USB
 
 ## drivers64UEFI
 
@@ -79,6 +84,7 @@ An open source kernel extension enabling native macOS HD audio for not
 officially supported codecs without any filesystem modifications
 
 * [https://github.com/acidanthera/AppleALC](https://github.com/acidanthera/AppleALC)
+
 
 #### WhateverGreen
 
